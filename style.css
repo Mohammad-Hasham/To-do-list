@@ -1,0 +1,116 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.todo-list{
+    height: 30rem;
+    width: 28rem;
+    border: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:#FFF6DE; /*This is the all box*/
+}
+
+.text-type{
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 54px;
+    border: none;
+    font-size: 1em;
+    padding-left: 10px;         /*this is for input to write or add in to do list */
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.text-type:hover{
+background-color:rgb(212, 203, 192);
+}
+
+
+.add-btn{
+    height:1.5rem;
+    width: 5.5rem;
+    border-radius: 54px;
+    border: none;
+    transition: 0.5ms;
+    background-color: #8BDFDD;
+    transition: 0.5ms;
+}
+.add-btn:hover{
+ background-color:#a1ebea;
+}
+
+.place{
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    
+}
+.place1{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1em;
+    font-weight: 500;
+}
+li{
+    line-height: 28px;
+    
+}
+.place2{
+    flex: 0 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    padding-top: 15px;
+    height: 100%;
+    gap: 10px;
+    
+
+}
+
+.place2-child{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.check{
+width: 1rem;
+}
+.Delete-btn{
+    height:1rem;
+    width: 5.5rem;
+    border-radius: 54px;
+    border: none;
+    transition: 0.5ms;
+    background-color: #F48F68;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.Delete-btn:hover{
+background-color: #d3967e;
+}
+.Delete-btn:focus{
+    border: 1px solid black;
+
+}
+
+
+
