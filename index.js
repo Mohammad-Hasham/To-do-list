@@ -1,22 +1,30 @@
 let inputText = document.getElementById("text-type")
 let addBtn = document.getElementById("add-btn");
 let unOrderList = document.getElementById("list");
-let count = 0;
-
-
 addBtn.addEventListener("click" ,()=> {
 let value = inputText.value;
-if(value === ""){
+value = value.charAt(0).toUpperCase()+
+value.slice(1).toLowerCase()
+ if(value === ""){
   alert("Plaese Write somthing ")
 }
+
+
 else{
-let newLi = document.createElement("li");
-count++;
+
+  
+  
+    let newLi = document.createElement("li");
 newLi.contentEditable = true;
 newLi.style.outline = "none"
 unOrderList.append(newLi)
 newLi.textContent = `${value}`;
 inputText.value = "";
+
+  
+
+
+
 // create delete button for all list //
 let place2 = document.querySelector(".place2")
 let place2Child = document.createElement("div");
